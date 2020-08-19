@@ -1,0 +1,66 @@
+* {
+    font-family: 'Indie Flower', cursive, Times, serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+    margin: 16px 0;
+}
+
+section {
+    background-color: grey;
+    border: solid 1px black;
+    margin: 10px;
+}
+
+section > div {
+    border: solid 1.5px black;
+    position: relative;
+    width: 35%;
+    left: 65%;
+    font-weight: bold;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+p {
+    margin: 5px 5px 5px 10px;
+    font-size: 20px;
+}
+
+#chicken {
+    background-color: indianred;
+}
+
+#beef {
+    background-color: #9e2929;
+    color: white;
+}
+
+#sushi {
+    background-color: #d8ce79;
+}
+
+/** Large devices only **/
+@media (min-width: 992px) {
+    .s1, .s2, .s3 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/** Medium devices only **/
+@media (max-width: 991px) and (min-width: 768px) {
+    .s1, .s2 {
+        float: left;
+        width: 50%;
+    }
+    .s3 {
+        float: left;
+        width: 100%;
+    }
+}
